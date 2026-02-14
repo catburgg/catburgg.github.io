@@ -194,6 +194,12 @@ p {
   flex: 2;
 }
 
+.intro__links {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
 .intro__photo {
   flex: 1;
   display: flex;
