@@ -74,6 +74,15 @@ a:hover {
   text-decoration: none;
 }
 
+.authors .author-me {
+  color: #000;
+  font-weight: bold;
+}
+
+.authors .author-me:hover {
+  color: #f09228;
+}
+
 body,
 td,
 th,
@@ -195,9 +204,42 @@ p {
 }
 
 .intro__links {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
   margin-top: 1em;
   margin-bottom: 0;
+}
+
+.intro__links .intro__link-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: #f0f0f0;
+  color: #1772d0;
+  text-decoration: none;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06), -4px -4px 10px rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.intro__links .intro__link-item:hover {
+  background: #e8e8e8;
+  color: #f09228;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08), -2px -2px 6px rgba(255, 255, 255, 0.8);
+}
+
+.intro__links .intro__link-item:focus {
+  color: #f09228;
+}
+
+.intro__links .intro__link-icon {
+  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 .intro__photo {
